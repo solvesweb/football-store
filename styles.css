@@ -213,7 +213,7 @@ aside {
 /* Shopping Cart */
 
 #shoppingCartContainer {
-  padding: 0 24px;
+  padding: 0 24px 20px 24px;
 }
 
 .title-container {
@@ -316,13 +316,18 @@ aside {
 }
 
 #productDetail .product-info {
+  display: flex;
+  flex-direction: column;
   margin: 24px 24px 0 24px;
 }
+
+
 #productDetail .product-info p:nth-child(1) {
   font-weight: bold;
   font-size: var(--md);
   margin-top: 0;
   margin-bottom: 4px;
+  
 }
 #productDetail .product-info p:nth-child(2) {
   color: var(--very-ligth-pink);
@@ -360,7 +365,7 @@ aside {
   grid-template-columns: repeat(auto-fill, 240px);
   gap: 26px;
   place-content: center;
-  margin-top: 20px;
+  margin: 40px auto;
 }
 
 .product-card {
@@ -372,6 +377,7 @@ aside {
   height: 240px;
   border-radius: 20px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .product-info {

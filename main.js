@@ -102,6 +102,78 @@ productList.push({
   image: "./Assets/boots-2.jpg",
 });
 
+productList.push({
+  name: "Adidas Boots",
+  price: 99,
+  image: "./Assets/boots.jpg",
+});
+
+productList.push({
+  name: "NB Boots",
+  price: 90,
+  image: "./Assets/boots-1.jpg",
+});
+
+productList.push({
+  name: "Nike Boots",
+  price: 120,
+  image: "./Assets/boots-2.jpg",
+});
+
+productList.push({
+  name: "Adidas Boots",
+  price: 99,
+  image: "./Assets/boots.jpg",
+});
+
+productList.push({
+  name: "NB Boots",
+  price: 90,
+  image: "./Assets/boots-1.jpg",
+});
+
+productList.push({
+  name: "Nike Boots",
+  price: 120,
+  image: "./Assets/boots-2.jpg",
+});
+
+productList.push({
+  name: "Adidas Boots",
+  price: 99,
+  image: "./Assets/boots.jpg",
+});
+
+productList.push({
+  name: "NB Boots",
+  price: 90,
+  image: "./Assets/boots-1.jpg",
+});
+
+productList.push({
+  name: "Nike Boots",
+  price: 120,
+  image: "./Assets/boots-2.jpg",
+});
+
+productList.push({
+  name: "Adidas Boots",
+  price: 99,
+  image: "./Assets/boots.jpg",
+});
+
+productList.push({
+  name: "NB Boots",
+  price: 90,
+  image: "./Assets/boots-1.jpg",
+});
+
+productList.push({
+  name: "Nike Boots",
+  price: 120,
+  image: "./Assets/boots-2.jpg",
+});
+
 function renderProducts(arr) {
   for (product of arr) {
     const productCard = document.createElement("div");
