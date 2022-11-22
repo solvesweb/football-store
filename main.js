@@ -43,7 +43,8 @@ function togleCarritoAside() {
     mobileMenu.classList.add("inactive");
   }
 
-  const isProductDetailCLosed = productDetailContainer.classList.contains("inactive");
+  const isProductDetailCLosed =
+    productDetailContainer.classList.contains("inactive");
 
   if (!isProductDetailCLosed) {
     productDetailContainer.classList.add("inactive");
@@ -56,7 +57,10 @@ function togleCarritoAside() {
 }
 
 function openProductDetailAside() {
-  shoppingCartContainer.classList.add("inactive")
+
+  desktopMenu.classList.add("inactive");
+  shoppingCartContainer.classList.add("inactive");
+
   productDetailContainer.classList.remove("inactive");
 }
 
@@ -64,29 +68,42 @@ function closeProductDetailAside() {
   productDetailContainer.classList.add("inactive");
 }
 
-/* 
-<div class="product-card">
-  <img
-    src="https://images.unsplash.com/photo-1612387049695-637b743f80ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=694&q=80"
-    alt=""
-  />
-  <div class="product-info">
-    <div>
-      <p>120,00 €</p>
-      <p>Boots</p>
-    </div>
-    <figure>
-      <img src="/Assets/icons/bt_add_to_cart.svg" alt="" />
-    </figure>
-  </div>
-</div>; 
-*/
+/* function displayInfoInProductDetail(event) {
+  const newImgProductDetail = event.path[0].src;
+
+  const productInfo = event.path[1].childNodes[1];
+
+  const price = productInfo.querySelector("div p:first-child");
+  const name = productInfo.querySelector("div p:nth-child(2)");
+  
+  const info = productInfo.querySelector('div p:nth-child(3)');
+
+  const productDetailImg =
+    productDetailContainer.querySelector("img:nth-child(2)");
+  productDetailImg.setAttribute("src", newImgProductDetail);
+  productDetailImg.setAttribute("alt", name.textContent);
+
+  const productDetailPrice = productDetailContainer.querySelector(
+    ".product-info p:nth-child(1)"
+  );
+  productDetailPrice.innerText = price.textContent;
+
+  const productDetailName = productDetailContainer.querySelector(
+    ".product-info p:nth-child(2)"
+  );
+  productDetailName.innerText = name.textContent;
+
+  
+}
+ */
+/* Añadimos los productos */
 
 const productList = [];
 
 productList.push({
   name: "Adidas Boots",
   price: 99,
+  info: "Hola Mundo",
   image: "./Assets/boots.jpg",
 });
 
