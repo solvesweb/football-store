@@ -215,7 +215,7 @@ function renderProducts(arr) {
 
     const productInfoFigure = document.createElement("figure");
     const productImgCart = document.createElement("img");
-    productImgCart.setAttribute("src", "/Assets/icons/bt_add_to_cart.svg");
+    productImgCart.setAttribute("src", "./Assets/icons/bt_add_to_cart.svg");
 
     productInfoFigure.append(productImgCart);
 
